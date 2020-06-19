@@ -1,0 +1,85 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+// small{ font-size:1.2rem; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+// a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
+html, body{width: 100%;height: 100%;min-width: 980px !important}
+.text-center{text-align: center}
+// #app {margin: 0 auto;}
+.clearfix:after,.clearfix:before {
+    display: block;
+    content: ".";
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: none;
+    clear: both;
+    h1{color:red}
+}
+.float_left{
+    float: left;
+}
+.clearfix {
+    zoom:1; /*兼容ie7一下*/
+}
+.gap-nav{
+	margin-top: 4.8rem;
+	// height: 100%;
+}
+.gap20{margin-top: 2rem;}
+
+.flex(@flex) {
+	-webkit-box-flex: @flex;
+	-webkit-flex: @flex;
+	-ms-flex: @flex;
+	flex: @flex;
+}
+.flex-box() {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.flex-flow(@flex) {
+	-webkit-flex-flow: @flex;
+	flex-flow: @flex;
+}
+.flex-align(@flex) {
+	-webkit-box-align: @flex;
+	-webkit-align-items: @flex;
+	-ms-flex-align: @flex;
+	align-items: @flex;
+}
+.flex-direction(@flex) {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: @flex;
+	-ms-flex-direction: @flex;
+	flex-direction: @flex;
+}
+.flex-wrap(@flex) {
+	-webkit-flex-wrap: @flex;
+	-ms-flex-wrap: @flex;
+	flex-wrap: @flex;
+}
+.flex-justify(@flex) {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: @flex;
+	justify-content: @flex;
+}
